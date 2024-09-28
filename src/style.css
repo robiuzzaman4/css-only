@@ -1,0 +1,54 @@
+/* variables */
+:root {
+  --background: hsl(240, 23%, 5%);
+  --foreground: hsl(240, 50%, 98%);
+  --muted: hsl(240, 3%, 54%);
+
+  --background-secondary: hsl(240, 20%, 10%);
+  --background-tertiary: hsl(240, 18%, 13%);
+
+  --pink: hsl(330, 81%, 60%);
+  --furisha: hsl(292, 84%, 61%);
+  --green: hsl(160, 84%, 39%);
+  --blue: hsl(217, 91%, 60%);
+  --violet: hsl(258, 90%, 66%);
+  --orange: hsl(25, 95%, 53%);
+  --cyan: hsl(189, 94%, 43%);
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* base style */
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "Lexend", system-ui;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.text-2xl {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.text-xl {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.text-lg {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.text-base {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--muted);
+}
