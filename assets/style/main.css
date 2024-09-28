@@ -49,6 +49,7 @@ body {
 .text-lg {
   font-size: 1.2rem;
   font-weight: 500;
+  color: var(--muted);
 }
 .text-base {
   font-size: 0.9rem;
@@ -56,11 +57,20 @@ body {
   color: var(--muted);
 }
 
+/* container */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
 /* header section */
 .header {
   width: 100%;
-  position: fixed;
-  top: 0;
 
   .nav {
     width: fit-content;
@@ -79,9 +89,17 @@ body {
       color: var(--foreground);
       height: 100%;
       img {
-        height: 1.2rem;
-        width: 1.2rem;
+        height: 1.5rem;
+        width: 1.5rem;
       }
     }
   }
+}
+
+.item-card {
+  width: 100%;
+  background-color: var(--background-secondary);
+  border-radius: var(--rounded);
+  padding: 1rem;
+
 }
