@@ -1,7 +1,7 @@
 /* variables */
 :root {
   --background: hsl(240, 23%, 5%);
-  --foreground: hsl(240, 50%, 98%);
+  --foreground: #f7f7fc;
   --muted: hsl(240, 3%, 54%);
 
   --background-secondary: hsl(240, 20%, 10%);
@@ -14,6 +14,8 @@
   --violet: hsl(258, 90%, 66%);
   --orange: hsl(25, 95%, 53%);
   --cyan: hsl(189, 94%, 43%);
+
+  --rounded: 1rem;
 }
 
 /* reset */
@@ -35,6 +37,7 @@ body {
   gap: 4rem;
 }
 
+/* re-useable styles */
 .text-2xl {
   font-size: 2rem;
   font-weight: 500;
@@ -51,4 +54,34 @@ body {
   font-size: 0.9rem;
   font-weight: 400;
   color: var(--muted);
+}
+
+/* header section */
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+
+  .nav {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: var(--background-secondary);
+    text-align: center;
+    border-radius: var(--rounded);
+    margin-block: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    a {
+      color: var(--foreground);
+      height: 100%;
+      img {
+        height: 1.2rem;
+        width: 1.2rem;
+      }
+    }
+  }
 }
